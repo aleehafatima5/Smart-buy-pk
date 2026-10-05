@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartBuy PK - Smart Shopping Guide for Pakistan</title>
+<meta name="description" content="Find where to buy any product in Pakistan, compare prices, check reviews and get a smart buy verdict.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23047857'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='%23f5b301' font-family='Arial' font-weight='700'%3ES%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('sb-theme');if(t)document.documentElement.dataset.theme=JSON.parse(t)}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">🇵🇰 Made for Pakistani shoppers</span>
+      <h1>Should you buy it? <em>Find out in seconds.</em></h1>
+      <p class="lead">Type any product. We show where to buy it in Pakistan, where to check real reviews, and tell you if it is a smart buy.</p>
+      <form class="hero-search" id="heroForm" autocomplete="off">
+        <input id="heroQ" required placeholder="Search any product, e.g. Samsung Galaxy A15">
+        <select id="heroCat" aria-label="Category"></select>
+        <button class="btn gold" type="submit">Check it</button>
+      </form>
+      <div class="chips">
+        <a class="chip" href="finder.html?q=Samsung%20Galaxy%20A15&cat=mobiles">📱 Samsung Galaxy A15</a>
+        <a class="chip" href="finder.html?q=Nivea%20body%20lotion&cat=beauty">🧴 Nivea body lotion</a>
+        <a class="chip" href="finder.html?q=Dell%20Inspiron%2015&cat=laptops">💻 Dell Inspiron 15</a>
+        <a class="chip" href="finder.html?q=Lawn%203%20piece%20suit&cat=womens">👗 Lawn 3 piece suit</a>
+        <a class="chip" href="finder.html?q=Air%20fryer&cat=home">🏠 Air fryer</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b id="statCats">0</b><span>Product categories</span></div>
+      <div class="stat"><b id="statStores">0</b><span>Stores covered</span></div>
+      <div class="stat"><b id="statSources">0</b><span>Review sources</span></div>
+      <div class="stat"><b>100%</b><span>Free to use</span></div>
+    </div>
+  </div>
+
+  <section class="block hidden" id="recentBox" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:14px"><span class="bar"></span><h2>Your recent checks</h2></div>
+      <div class="recent" id="recent" style="justify-content:center"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head"><span class="bar"></span><h2>Shop by category</h2><p>Pick a category to see the best stores for it.</p></div>
+      <div class="grid g4" id="popular"></div>
+      <p style="text-align:center;margin-top:24px"><a class="btn ghost" href="categories.html">See all categories →</a></p>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="sec-head"><span class="bar"></span><h2>How it works</h2><p>Four simple steps from search to decision.</p></div>
+      <div class="grid g4">
+        <div class="card step"><div class="n">1</div><h3>Enter a product</h3><p>Name, category, budget and a picture if you have one.</p></div>
+        <div class="card step"><div class="n">2</div><h3>See the stores</h3><p>Pakistani stores come first, with a search link for each.</p></div>
+        <div class="card step"><div class="n">3</div><h3>Compare</h3><p>Add the price and rating you see at each store.</p></div>
+        <div class="card step"><div class="n">4</div><h3>Get a verdict</h3><p>We score every store and say buy, think first, or skip.</p></div>
+      </div>
+      <p style="text-align:center;margin-top:24px"><a class="btn ghost" href="how-it-works.html">Learn more →</a></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head"><span class="bar"></span><h2>Why SmartBuy PK?</h2><p>Shop with confidence, not guesswork.</p></div>
+      <div class="grid g4">
+        <div class="card hover"><span class="ico">🇵🇰</span><h3>Pakistan first</h3><p>Stores that serve Pakistan are shown at the top.</p></div>
+        <div class="card hover"><span class="ico">⭐</span><h3>Real reviews</h3><p>One click to YouTube, Google, Instagram, Facebook and Reddit.</p></div>
+        <div class="card hover"><span class="ico">💰</span><h3>Best value</h3><p>Compare stores side by side and see who gives the best deal.</p></div>
+        <div class="card hover"><span class="ico">🛡️</span><h3>Safe buying</h3><p>Warnings for fake-looking prices and weak ratings.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Ready to find your next buy?</h2>
+        <p>Check any product in under a minute. No sign up needed.</p>
+        <a class="btn gold" href="finder.html">Check a product now</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>

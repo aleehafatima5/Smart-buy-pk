@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check a Product - SmartBuy PK</title>
+<meta name="description" content="Enter any product and compare stores, prices and reviews in Pakistan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23047857'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='%23f5b301' font-family='Arial' font-weight='700'%3ES%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('sb-theme');if(t)document.documentElement.dataset.theme=JSON.parse(t)}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="finder">
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Check a product</h1>
+      <p>Enter what you want to buy. We will show the best places to look and help you decide.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="panel lift">
+      <form id="form" class="form" autocomplete="off">
+        <div class="full">
+          <label for="name">Product name *</label>
+          <input id="name" required placeholder="Example: Samsung Galaxy A15, Nivea body lotion, Dell Inspiron 15, gold plated necklace">
+        </div>
+        <div>
+          <label for="cat">Category</label>
+          <select id="cat"></select>
+        </div>
+        <div>
+          <label for="budget">Your budget (PKR) - optional</label>
+          <input id="budget" type="number" min="0" placeholder="e.g. 45000">
+        </div>
+        <div>
+          <label for="prio">What matters most?</label>
+          <select id="prio">
+            <option value="balanced">Balanced</option>
+            <option value="price">Lowest price</option>
+            <option value="quality">Best quality</option>
+          </select>
+        </div>
+        <div>
+          <label for="img">Product picture - optional</label>
+          <input id="img" type="file" accept="image/*">
+        </div>
+        <div class="full actions">
+          <button class="btn" type="submit">Check this product</button>
+          <button class="btn ghost" type="button" id="demo">Try a demo</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="results" class="hidden">
+
+      <section style="padding-top:34px">
+        <div class="product" id="productCard"></div>
+      </section>
+
+      <section style="padding-top:34px">
+        <div class="sec-head" style="text-align:left;margin:0 0 16px;max-width:none">
+          <h2>1. Where to buy</h2>
+          <p>Pakistani stores come first. Click "Search here" to open the store, then type the price, rating and reviews you see into the boxes. The verdict updates by itself.</p>
+        </div>
+        <div class="stores" id="stores"></div>
+      </section>
+
+      <section style="padding-top:34px">
+        <div class="sec-head" style="text-align:left;margin:0 0 16px;max-width:none">
+          <h2>2. Our verdict</h2>
+          <p>Based on the numbers you entered above.</p>
+        </div>
+        <div id="verdict" class="verdict v-none"><h3>Waiting for data</h3><p>Fill price and rating for at least one store.</p></div>
+        <div id="compare" style="margin-top:16px"></div>
+      </section>
+
+      <section style="padding:34px 0 10px">
+        <div class="sec-head" style="text-align:left;margin:0 0 16px;max-width:none">
+          <h2>3. Check real reviews</h2>
+          <p>See what real people say about this product.</p>
+        </div>
+        <div class="sources" id="sources"></div>
+        <p style="margin-top:18px"><a class="chip dark" href="tips.html">🛡️ Read our safe shopping tips before you pay</a></p>
+      </section>
+    </div>
+    <div style="height:50px"></div>
+  </div>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>
